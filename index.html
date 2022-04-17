@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+ 
+</head>
+<body>
+
+  <main>
+
+    <!-- Navbar for laptops or above -->
+    <nav class="navbar">
+      <div class="menu">
+        <h1>snap</h1>
+        <div class="menu-list">
+          <ul  class="features">
+            <li class="feature">
+              <a href="#">Features</a>
+              <img class="ar" src="./images/icon-arrow-down.svg">
+              <img class="ar u" src="./images/icon-arrow-up.svg">
+            </li>
+            <li id="company">
+              <a href="#">Company</a>
+              <img class="ar1" src="./images/icon-arrow-down.svg">
+              <img class="ar1 u1" src="./images/icon-arrow-up.svg">
+            </li>
+            <li>
+              <a href="#">Careers</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  
+     
+  
+      
+      <div class="buttons">
+        <button class="btn">Login</button>
+        <button class="btn register">Register</button>
+      </div>
+  
+      <div class="hammenu">
+        <img src="./images/icon-menu.svg"/>
+  
+      </div>
+    </nav>
+    
+
+     <!-- Features card for Laptop and above -->
+    <div class="card hide">
+      <ul>
+        <li class="flex">
+          <img class="icon" src="./images/icon-todo.svg"/>
+          <small>Todo List</small>
+        </li>
+        <li class="flex">
+          <img class="icon" src="./images/icon-calendar.svg"/>
+          <small>Calender</small>
+        </li>
+        <li class="flex">
+          <img class="icon" src="./images/icon-reminders.svg"/>
+          <small>Remainder</small>
+        </li>
+        <li class="flex">
+          <img class="icon" src="./images/icon-planning.svg"/>
+          <small>Planning</small>
+        </li>
+      </ul>
+  
+    </div>
+    
+    <!-- Company card for Laptop and above -->
+    <div class="new hide">
+      <ul>
+        <li class="flex">
+          <small>History</small>
+        </li>
+        <li class="flex">
+          <small>Our Team</small>
+        </li>
+        <li class="flex">
+          <small>Blog</small>
+        </li>
+      </ul>
+  
+    </div>
+    
+
+    <!-- Hero Content -->
+
+    <div class="container">
+      <section class="grid">
+        <div class="left">
+          <div class="content">
+            <h1 class="title">
+              Make remote work
+            </h1>
+            <p class="desc">
+              Get your team in sync, no matter your location. Streamline processes, 
+              create team rituals, and watch productivity soar.
+            </p>
+            <button class="btn learn">
+              Learn more
+            </button>
+    
+          </div>
+          <div class="clients">
+            <img class="client" src="./images/client-databiz.svg">
+            <img class="client item2" src="./images/client-audiophile.svg">
+            <img class="client" src="./images/client-meet.svg">
+            <img class="client" src="./images/client-maker.svg">
+    
+          </div>
+        </div>
+        <div class="right">
+  
+          <img class="hero" src="./images/image-hero-desktop.png">
+          <img class="mob-hero" src="./images/image-hero-mobile.png">
+  
+        </div>
+  
+  
+      </section>
+  
+        
+    
+    
+    
+    
+    </div>
+
+  </main>
+
+ 
+  <!-- Slide in menu for Small screens -->
+  
+  <div class="mobmenu">
+
+    <img class="close" src="./images/icon-close-menu.svg"/>
+    <div class="openmenu">
+      <ul  class="Mobfeatures">
+
+        <div class="lists">
+          <li class="myfeature">
+            <a href="#">Features</a>
+
+            <div class="arrowbox">
+              <img class="arrowdown" src="./images/icon-arrow-down.svg">
+              <img class="arrowup" src="./images/icon-arrow-up.svg">
+            </div>
+            
+          </li>
+          <ul class="shift">
+            <li class="flex">
+              <img class="icon" src="./images/icon-todo.svg"/>
+              <small>Todo List</small>
+            </li>
+            <li class="flex">
+              <img class="icon" src="./images/icon-calendar.svg"/>
+              <small>Calender</small>
+            </li>
+            <li class="flex">
+              <img class="icon" src="./images/icon-reminders.svg"/>
+              <small>Remainder</small>
+            </li>
+            <li class="flex">
+              <img class="icon" src="./images/icon-planning.svg"/>
+              <small>Planning</small>
+            </li>
+          </ul>
+
+
+        </div>
+
+        <div class="lists">
+          <li class="mycompany">
+            <a href="#">Company</a>
+            <div class="arrowbox">
+              <img class="arrowdown1" src="./images/icon-arrow-down.svg">
+              <img class="arrowup1" src="./images/icon-arrow-up.svg">
+            </div>
+          </li>
+          <ul  class="shift1">
+            <li class="flex">
+              <small>History</small>
+            </li>
+            <li class="flex">
+              <small>Our Team</small>
+            </li>
+            <li class="flex">
+              <small>Blog</small>
+            </li>
+          </ul>
+
+        </div>
+       
+        <div class="lists">
+          <li>
+            <a href="#">Careers</a>
+          </li>
+
+        </div>
+
+        <div class="lists">
+          <li>
+            <a href="#">About</a>
+          </li>
+
+        </div>
+       
+        
+       
+      </ul>
+    </div>
+    
+
+  </div>
+
+ 
+
+  
+  <script src="./app.js"></script>
+
+  <!-- Features
+  Company
+  Careers
+  About
+
+  Login
+  Register
+
+  Make remote work
+
+  Get your team in sync, no matter your location. Streamline processes, 
+  create team rituals, and watch productivity soar.
+
+  Learn more -->
+  
+  
+</body>
+</html>

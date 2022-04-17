@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: 'Epilogue', sans-serif;
+    line-height: 1.6;
+    background-color: hsl(0, 0%, 98%);
+    position: relative;
+    z-index: -1;
+}
+
+small{
+
+    color: hsl(0, 0%, 41%);
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+h1{
+    font-size: 40px;
+}
+ul{
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+li{
+
+    padding: 0 20px;
+    width: 150px;
+}
+
+a:hover{
+
+    color: hsl(0, 0%, 8%);
+    font-size: 700;
+}
+
+a{
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+
+}
+
+p{
+
+    color: hsl(0, 0%, 41%);
+    margin-top: 40px;
+ }
+
+
+ img{
+
+    width: 100%;
+    height: auto;
+}
+
+.ar{
+
+    width: 10px;
+}
+.ar1{
+
+    width: 10px;
+}
+
+.menu{
+
+    display: flex;
+    gap: 50px;
+}
+
+.features{
+
+    display: flex;
+   
+}
+.buttons{
+
+    margin: 10px;
+}
+
+.title{
+
+    font-size: 70px;
+    line-height: 1;
+    margin-top: -100px;
+}
+
+
+
+
+.u{
+
+    display: none;
+}
+
+.u1{
+
+    display: none;
+}
+
+.h{
+    display: none;
+}
+.h1{
+    display: none;
+}
+
+.v{
+    display: inline;
+}
+.v1{
+    display: inline;
+}
+
+.navbar{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    position: relative;
+}
+
+.btn{
+
+    border: none;
+    background-color: transparent;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(0, 0%, 41%);
+    cursor: pointer;
+}
+
+.btn:hover{
+
+    color: hsl(0, 0%, 8%);
+}
+
+.register{
+
+    border: 2px solid hsl(0, 0%, 41%);
+    border-radius: 10px;
+   padding: 10px 20px;
+
+    margin-left: 20px;
+}
+
+
+
+
+.learn{
+
+    background-color: hsl(0, 0%, 8%);
+    width: 150px;
+    height: 50px;
+    color: hsl(0, 0%, 98%);
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.learn:hover{
+
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 8%);
+}
+
+.container{
+
+    max-width: 1100px;
+    margin:0 auto;
+}
+
+
+
+.grid{
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    
+}
+
+.clients{
+
+    display: flex;
+    align-items: center;
+    place-items: center;
+    margin-top: 90px;
+    justify-content: space-around;
+}
+
+.client{
+
+   font-size: 1px;
+   max-width: 80px;
+}
+
+.left{
+
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.right{
+
+    display: flex;
+    justify-content: center;
+}
+
+.hero{
+
+    max-height: 80vh;
+    max-width: auto;
+}
+
+.item2{
+
+    font-size: 10px;
+    width: 60px;
+}
+
+.icon{
+
+    width: 12px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.flex{
+
+    display: flex;
+    place-items: center;
+}
+
+.card{
+
+    width: 150px;
+    height: auto;
+    background-color: white;
+    box-shadow: 0px 3px 40px rgba(0,0,0,0.2) ;
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 80px;
+    left: 150px;
+   
+}
+
+.hide{
+    display: none;
+
+}
+
+
+
+
+.new{
+
+    position: absolute;
+    left: 320px;
+    width: 130px;
+    height: auto;
+    background-color: white;
+    box-shadow: 0px 3px 40px rgba(0,0,0,0.2) ;
+    border-radius: 10px;
+    padding: 10px;
+  
+}
+
+
+
+
+.show{
+
+    display: block;
+}
+
+
+
+
+
+.hammenu{
+
+    display: none;
+}
+
+.mobmenu{
+
+    display: none;
+}
+
+.mob-hero{
+
+    display: none;
+}
+
+
+
+
+/* Mobile CSS */
+
+
+
+@media (max-width:1000px) {
+    
+    .features{
+
+        display: none;
+    }
+
+    .buttons{
+
+        display: none;
+    }
+
+    .grid{
+
+        
+        grid-template-columns: 1fr;
+        
+    }
+
+    .left{
+
+        grid-row: 2/3;
+        text-align: center;
+        
+    }
+
+    .title{
+        font-size: 35px;
+    }
+
+    .content{
+
+        padding: 20px;
+    }
+
+    .hero{
+
+        display: none;
+
+    }
+
+    .mob-hero{
+
+        display: block;
+       
+    }
+    .clients{
+
+        margin-top: 50px;
+        margin-bottom: 100px;
+        padding: 10px;
+       
+    }
+
+    .hammenu{
+
+        display: block;
+    }
+
+    .navbar{
+
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        overflow: hidden;
+        
+    }
+
+
+    .mobmenu{
+
+        display: block;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0%;
+        
+        height: 300vh;
+        transform: translateX(100%);
+        display: hidden;
+        z-index: 9999;
+        overflow: hidden;
+        transition: 0.7s all;
+    }
+
+    .slide{
+
+        transform: translateX(0%);
+        /* display: block; */
+        transition: 0.7s all;
+        box-shadow: 0px 3px 3px 200px rgba(0,0,0,0.6);
+        width: 60%;
+        padding: 20px;       
+
+    }
+
+    .close{
+
+        width: 20px;
+        float: right;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+ 
+
+    .shift{
+
+        margin-left: 20px;
+        display: none;
+        transition: 0.3s all;
+    }
+    .shift1{
+
+        margin-left: 20px;
+        display: none;
+    }
+
+    .pop{
+
+        display: block;
+       
+    }
+
+    .flex{
+
+        margin-bottom: 8px;
+    }
+
+    .lists{
+
+        margin-bottom: 20px;
+    }
+    .openmenu{
+
+        margin-top: 60px;
+    }
+
+    .arrowbox{
+
+        display: flex;
+    }
+
+    .arrowdown{
+
+        width: 12px;
+    }
+
+    .arrowup{
+
+        width: 12px;
+        display: none;
+    }
+    .arrowdown1{
+
+        width: 12px;
+    }
+
+    .arrowup1{
+
+        width: 12px;
+        display: none;
+    }
+
+
+    .display{
+
+        display: inline;
+    }
+    .hidden{
+        display: none;
+    }
+
+    .myfeature{
+
+        display: flex;
+        place-items: center;
+        gap: 10px;
+    }
+
+    .mycompany{
+
+        display: flex;
+        place-items: center;
+        gap: 10px;
+    }
+
+
+ 
+  
+
+
+}
+
+
